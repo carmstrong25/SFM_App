@@ -1,0 +1,163 @@
+﻿    <!-- ========== FULLPAGE HEADER ========== -->
+    <div id="servicewrap">
+        <div class="container">
+            <div class="row">
+                <h1>Our First Class <b>Services</b></h1>
+            </div>
+        </div>
+    </div>
+    <!-- /FULLPAGE HEADER  -->
+
+    <!-- ========== DESCRIPTION ========== -->
+    <div class="container sinfo">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h3>Here are some of the things we do on a day-to-day basis for our clients. It distills down to six big things, but wow does it keep us busy.</h3>
+            </div>
+        </div>
+    </div>
+    <!-- /DESCRIPTION -->
+
+    <!-- ========== SERVICES ========== -->
+    <div class="container sinfo">
+        <div class="row svgicons centered">
+            <div class="col-lg-4">
+                <img src="~/Images/icons/mic.svg">
+                <h4>Consult</h4>
+                <p>Give us a shout! we'll give you more information about the solutions we provide to help you make a decesion for your new system.</p>
+            </div>
+
+            <div class="col-lg-4">
+                <img src="~/Images/icons/search.svg">
+                <h4>Discover</h4>
+                <p>We will work with you to find all the quirks about your business that makes it unique and use that information to create you the perfect system for your busisness needs</p>
+            </div>
+
+            <div class="col-lg-4">
+                <img src="~/Images/icons/girl.svg">
+                <h4>Collaborate</h4>
+                <p>
+                    We work with you through the whole process of developing your new amazing system. By the end you'll have recieved so much information you can probably start
+                    your own development company!
+                </p>
+            </div><
+
+            <div class="col-lg-4">
+                <img src="~/Images/icons/rocket.svg">
+                <h4>Speed and Testing</h4>
+                <p>We take pride in delevering complete projects as fast as possible. Once we get our talons on a project we work as fast as the Peregrine Falcon</p>
+            </div>
+
+            <div class="col-lg-4">
+                <img src="~/Images/icons/touch.svg">
+                <h4>Responsive</h4>
+                <p>our systems work flawlessly on all types and sizes of devices.</p>
+            </div>
+
+            <div class="col-lg-4">
+                <img src="~/Images/icons/google.svg">
+                <h4>Search Engine Optimization</h4>
+                <p>All our sites are built with search engine friendly code.</p>
+            </div>
+
+        </div>
+    </div>
+    <!-- /SERVICES -->
+
+    <!-- ========== CIRLCLE CHARTS ========== -->
+    <div class="container sinfo">
+        <div class="row centered">
+            <h3>Our Capabilities</h3>
+            <br>
+
+            <!-- First Chart -->
+            <div class="col-lg-3">
+                <canvas id="canvas" height="130" width="130"></canvas>
+                <br>
+                @section doughnutData1 {
+                    <script type="text/javascript">
+                        var doughnutData = [
+                                {
+                                    value: 90,
+                                    color: "#1abc9c"
+                                },
+                                {
+                                    value: 10,
+                                    color: "#ecf0f1"
+                                }
+                        ];
+                        var myDoughnut = new Chart(document.getElementById("canvas").getContext("2d")).Doughnut(doughnutData);
+                    </script>
+                }
+                <p><b>Web Development</b></p>
+            </div>
+
+            <!-- Second Chart -->
+            <div class="col-lg-3">
+                <canvas id="canvas2" height="130" width="130"></canvas>
+                <br>
+                @section doughnutData2 {
+                    <script type="text/javascript">
+                        var doughnutData = [
+                                {
+                                    value: 70,
+                                    color: "#1abc9c"
+                                },
+                                {
+                                    value: 30,
+                                    color: "#ecf0f1"
+                                }
+                        ];
+                        var myDoughnut = new Chart(document.getElementById("canvas2").getContext("2d")).Doughnut(doughnutData);
+                    </script>
+                }
+                <p><b>Desing</b></p>
+            </div>
+
+            <!-- Third Chart -->
+            <div class="col-lg-3">
+                <canvas id="canvas3" height="130" width="130"></canvas>
+                <br>
+                @section doughnutData3 {
+                    <script type="text/javascript">
+                        var doughnutData = [
+                                {
+                                    value: 60,
+                                    color: "#1abc9c"
+                                },
+                                {
+                                    value: 40,
+                                    color: "#ecf0f1"
+                                }
+                        ];
+                        var myDoughnut = new Chart(document.getElementById("canvas3").getContext("2d")).Doughnut(doughnutData);
+                    </script>
+                }
+                <p><b>SEO</b></p>
+            </div>
+
+            <!-- Fourth Chart -->
+            <div class="col-lg-3">
+                <canvas id="canvas4" height="130" width="130"></canvas>
+                <br>
+                @section doughnutData4 {
+                    <script type="text/javascript">
+                        var doughnutData = [
+                                {
+                                    value: 85,
+                                    color: "#1abc9c"
+                                },
+                                {
+                                    value: 15,
+                                    color: "#ecf0f1"
+                                }
+                        ];
+                        var myDoughnut = new Chart(document.getElementById("canvas4").getContext("2d")).Doughnut(doughnutData);
+                    </script>
+                }
+                <p><b>Speed & Testing</b></p>
+            </div>
+
+        </div>
+    </div>
+    <!-- /CIRLCLE CHARTS -->
