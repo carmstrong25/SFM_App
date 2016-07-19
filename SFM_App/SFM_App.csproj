@@ -352,7 +352,6 @@
     <Content Include="fonts\lato\lato-regular-webfont.eot" />
     <Content Include="fonts\lato\lato-regular-webfont.ttf" />
     <Content Include="fonts\lato\lato-regular-webfont.woff" />
-    <None Include="Project_Readme.html" />
     <Content Include="Views\Home\Sent.cshtml" />
   </ItemGroup>
   <PropertyGroup>
