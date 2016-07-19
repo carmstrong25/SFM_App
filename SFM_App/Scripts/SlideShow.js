@@ -1,7 +1,7 @@
 ﻿$(document).ready(function () {
     //Slideshow
     $('.banner').revolution({
-        delay: 9000,
+        delay: 15000,
         startwidth: 1040,
         startheight: 463,
         onHoverStop: "off",
