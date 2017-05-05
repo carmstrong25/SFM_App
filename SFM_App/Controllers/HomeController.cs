@@ -60,7 +60,7 @@ namespace SFM_App.Controllers
                     smtp.Credentials = credential;
                     smtp.Host = "smtp.office365.com";
                     smtp.Port = 587;
-                    smtp.EnableSsl = true;
+                    smtp.EnableSsl = false;
                     await smtp.SendMailAsync(message);
                     return RedirectToAction("Sent");
                 }
