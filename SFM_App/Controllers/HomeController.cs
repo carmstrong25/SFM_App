@@ -36,6 +36,12 @@ namespace SFM_App.Controllers
             return View();
         }
 
+        public ActionResult Portfolio()
+        {
+            ViewBag.Title = "Portfolio";
+            return View();
+        }
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Contact(ContactFormModel model)

@@ -1,4 +1,6 @@
 ﻿<!DOCTYPE html>
+
+<html>
 <!--
 000000000000   000000000000     00000000     000000000000   00        00
 000000000000   000000000000   000000000000   000000000000    00      00
@@ -11,106 +13,107 @@
 000000000000   000000000000   0000000000     00                  00
 000000000000   000000000000     000000       00                  00
 -->
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>@ViewBag.Title</title>
-        @Styles.Render("~/bundles/bootstrapcss")
-        @Styles.Render("~/bundles/flat-uicss")
-        @Styles.Render("~/bundles/maincss")
-        @Styles.Render("~/bundles/media-slideshowcss")
-        @Styles.Render("~/bundles/revolutioncss")
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/bundles/bootstrapcss")
+    @Styles.Render("~/bundles/flat-uicss")
+    @Styles.Render("~/bundles/maincss")
+    @Styles.Render("~/bundles/media-slideshowcss")
+    @Styles.Render("~/bundles/revolutioncss")
 
-        <!-- ========== Google Analytics ========== -->
-        <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    <!-- ========== Google Analytics ========== -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-            ga('create', 'UA-74036709-2', 'auto');
-            ga('send', 'pageview');
-        </script>
-        <!-- /Google Analytics -->
+        ga('create', 'UA-74036709-2', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!-- /Google Analytics -->
 
-    </head>
-    <body>
-        <!-- ========== NAV ========== -->
-        <div class="navbar navbar-default navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    @Html.ActionLink("SignalFyre", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+</head>
+<body>
+    <!-- ========== NAV ========== -->
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("SignalFyre", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Team", "Team", "Home")</li>
+                    <li>@Html.ActionLink("Portfolio", "Portfolio", "Home")</li>
+                    <li>@Html.ActionLink("Services", "Services", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /NAV -
+
+    @RenderBody()
+
+    <!-- ========== FOOTER ========== -->
+    <div id="f">
+        <div class="container">
+            <div class="row">
+                <h5 class="centered">Let's talk</h5>
+                <br>
+                <div class="col-lg-4">
+                    <p>Want to be direct? Give us a shout via email or phone.</p>
+                    <p>
+                        <small>
+                            p: 780-231-8398<br />
+                            e: colby.armstrong@signalfyre.ca<br />
+                            e: connor.england@signalfyre.ca
+                        </small>
+                    </p>
                 </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                        <li>@Html.ActionLink("Team", "Team", "Home")</li>
-                        <li>@Html.ActionLink("Services", "Services", "Home")</li>
-                        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                    </ul>
+                <div class="col-lg-4">
+                    <p>Got a question?</p>
+                    <p><small>Use the contact page to ask us anything.</small></p>
+                    <p>
+                        <small>
+                            <a href="contact.html">@Html.ActionLink("Contact", "Contact", "Home", new { area = "" }, new { @class = "btn btn-embossed btn-primary btn-block" })</a>
+                        </small>
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <p>What can we do?</p>
+                    <p><small>Check out the services page to see what we can offer.</small></p>
+                    <p>
+                        <small>
+                            <a href="contact.html">@Html.ActionLink("Services", "Services", "Home", new { area = "" }, new { @class = "btn btn-embossed btn-primary btn-block" })</a>
+                        </small>
+                    </p>
                 </div>
             </div>
         </div>
-        <!-- /NAV -
+    </div>
+    <!-- /FOOTER -->
+    @Scripts.Render("~/bundles/jqueryjs")
+    @Scripts.Render("~/bundles/bootstrapjs")
+    @Scripts.Render("~/bundles/Chartjs")
+    @Scripts.Render("~/bundles/html5shivjs")
+    @Scripts.Render("~/bundles/jqueryrevolutionjs")
+    @Scripts.Render("~/bundles/modernizrjs")
+    @Scripts.Render("~/bundles/slideshowjs")
+    @RenderSection("doughnutData1", required: false)
+    @RenderSection("doughnutData2", required: false)
+    @RenderSection("doughnutData3", required: false)
+    @RenderSection("doughnutData4", required: false)
 
-        @RenderBody()
-
-        <!-- ========== FOOTER ========== -->
-        <div id="f">
-            <div class="container">
-                <div class="row">
-                    <h5 class="centered">Let's talk</h5>
-                    <br>
-                    <div class="col-lg-4">
-                        <p>Want to be direct? Give us a shout via email or phone.</p>
-                        <p>
-                            <small>
-                                p: 780-231-8398<br />
-                                e: colby.armstrong@signalfyre.ca<br />
-                                e: connor.england@signalfyre.ca
-                            </small>
-                        </p>
-                    </div>
-                    <div class="col-lg-4">
-                        <p>Got a question?</p>
-                        <p><small>Use the contact page to ask us anything.</small></p>
-                        <p>
-                            <small>
-                                <a href="contact.html">@Html.ActionLink("Contact", "Contact", "Home", new { area = "" }, new { @class = "btn btn-embossed btn-primary btn-block" })</a>
-                            </small>
-                        </p>
-                    </div>
-                    <div class="col-lg-4">
-                        <p>What can we do?</p>
-                        <p><small>Check out the services page to see what we can offer.</small></p>
-                        <p>
-                            <small>
-                                <a href="contact.html">@Html.ActionLink("Services", "Services", "Home", new { area = "" }, new { @class = "btn btn-embossed btn-primary btn-block" })</a>
-                            </small>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- /FOOTER -->
-
-        @Scripts.Render("~/bundles/jqueryjs")
-        @Scripts.Render("~/bundles/bootstrapjs")
-        @Scripts.Render("~/bundles/Chartjs")
-        @Scripts.Render("~/bundles/html5shivjs")
-        @Scripts.Render("~/bundles/jqueryrevolutionjs")
-        @Scripts.Render("~/bundles/modernizrjs")
-        @Scripts.Render("~/bundles/slideshowjs")
-        @RenderSection("doughnutData1", required: false)
-        @RenderSection("doughnutData2", required: false)
-        @RenderSection("doughnutData3", required: false)
-        @RenderSection("doughnutData4", required: false)
-
-    </body>
+</body>
 </html>

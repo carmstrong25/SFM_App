@@ -354,6 +354,9 @@
     <Content Include="fonts\lato\lato-regular-webfont.woff" />
     <Content Include="Views\Home\Sent.cshtml" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\Portfolio.cshtml" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
