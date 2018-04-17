@@ -75,11 +75,11 @@
                     <script type="text/javascript">
                         var doughnutData = [
                                 {
-                                    value: 90,
+                                    value: 95,
                                     color: "#1abc9c"
                                 },
                                 {
-                                    value: 10,
+                                    value: 5,
                                     color: "#ecf0f1"
                                 }
                         ];
@@ -97,18 +97,18 @@
                     <script type="text/javascript">
                         var doughnutData = [
                                 {
-                                    value: 70,
+                                    value: 90,
                                     color: "#1abc9c"
                                 },
                                 {
-                                    value: 30,
+                                    value: 10,
                                     color: "#ecf0f1"
                                 }
                         ];
                         var myDoughnut = new Chart(document.getElementById("canvas2").getContext("2d")).Doughnut(doughnutData);
                     </script>
                 }
-                <p><b>Graphic Design</b></p>
+                <p><b>Databases Management</b></p>
             </div>
 
             <!-- Third Chart -->
@@ -116,28 +116,6 @@
                 <canvas id="canvas3" height="130" width="130"></canvas>
                 <br>
                 @section doughnutData3 {
-                    <script type="text/javascript">
-                        var doughnutData = [
-                                {
-                                    value: 60,
-                                    color: "#1abc9c"
-                                },
-                                {
-                                    value: 40,
-                                    color: "#ecf0f1"
-                                }
-                        ];
-                        var myDoughnut = new Chart(document.getElementById("canvas3").getContext("2d")).Doughnut(doughnutData);
-                    </script>
-                }
-                <p><b>SEO</b></p>
-            </div>
-
-            <!-- Fourth Chart -->
-            <div class="col-lg-3">
-                <canvas id="canvas4" height="130" width="130"></canvas>
-                <br>
-                @section doughnutData4 {
                     <script type="text/javascript">
                         var doughnutData = [
                                 {
@@ -149,10 +127,32 @@
                                     color: "#ecf0f1"
                                 }
                         ];
-                        var myDoughnut = new Chart(document.getElementById("canvas4").getContext("2d")).Doughnut(doughnutData);
+                        var myDoughnut = new Chart(document.getElementById("canvas3").getContext("2d")).Doughnut(doughnutData);
                     </script>
                 }
                 <p><b>Speed & Testing</b></p>
+            </div>
+
+            <!-- Fourth Chart -->
+            <div class="col-lg-3">
+                <canvas id="canvas4" height="130" width="130"></canvas>
+                <br>
+                @section doughnutData4 {
+                    <script type="text/javascript">
+                        var doughnutData = [
+                                {
+                                    value: 70,
+                                    color: "#1abc9c"
+                                },
+                                {
+                                    value: 30,
+                                    color: "#ecf0f1"
+                                }
+                        ];
+                        var myDoughnut = new Chart(document.getElementById("canvas4").getContext("2d")).Doughnut(doughnutData);
+                    </script>
+                }
+                <p><b>Web Design</b></p>
             </div>
 
         </div>
